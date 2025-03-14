@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference ticket generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <img src="pattern-squiggly-line-top.svg" class="line" alt="">
+
+        <div class="logo">
+            <img src="logo-full.svg" alt="">
+        </div>
+
+        <div class="header">
+            <h1>
+                Your Journey to Coding Conf <br>
+                2025 Starts Here!
+            </h1>
+            <p>Secure your spot at next year's biggest coding conference</p>
+        </div>
+
+        <form class="load">
+            <h3>Upload Avatar</h3>
+            <div class="upload">
+                <img src="icon-upload.svg" id="uplod" alt="">
+
+                <p>Drag and drop or click to upload</p>
+            </div>
+
+            <div class="info">
+                <img src="icon-info.svg" alt="">
+                <p>upload your photo (JPG or PNG, max size:500kb)</p>
+            </div>
+
+            <div class="full-name">
+                <label for="full-name">Full Name</label>
+                <br>
+                <input type="text" placeholder="Example: first-name and last-name only">
+            </div>
+
+            <div class="email">
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" placeholder="Example@gmail.com">
+            </div>
+
+            <div class="github">
+                <label for="Github">GitHub Username</label>
+                <br>
+                <input type="text" placeholder="@yourusername">
+            </div>
+
+            <button id="but" class="ton">Generate My Ticket</button>
+        </form>
+
+        <div id="ticket-container" style="display: none;">
+            <h3>
+                We've emailed your ticket to <br>
+                <em id="user-email"></em> and will send updates in <br>
+                the run up to the event.
+            </h3>
+            <div class="ticket">
+                <div class="log">
+                    <img src="logo-full.svg" alt=""> <br>
+                    <div id="ticket-location" class="location"></div>
+                </div>
+
+                <div class="content">
+                    <img id="ticket-avatar" src="" alt="Avatar">
+                    <div class="ven">
+                        <p id="ticket-name"></p>
+                        <div class="git">
+                            <img src="icon-github.svg" alt="">
+                            <p id="ticket-github"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="number">
+                    <span id="ticket-numb"></span>
+                </div>
+            </div>
+        </div>
+
+        <img src="pattern-squiggly-line-bottom-desktop.svg" class="bottom" id="bott" alt="">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
